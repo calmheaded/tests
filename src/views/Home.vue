@@ -7,19 +7,19 @@
 
 <script>
 // @ is an alias to /src
-import axios from 'axios'
-import HelloWorld from '@/components/HelloWorld.vue'
+import axios from "axios";
+import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     HelloWorld
   },
   mounted() {
-    axios.get('/workshop/list').then(res => {
-      console.log(res, 'res')
-    })
-    console.log('test')
+    axios.get("/workshop/list").then(res => {
+      console.log(res, "res");
+    });
+    console.log("test11");
   }
-}
+};
 </script>
